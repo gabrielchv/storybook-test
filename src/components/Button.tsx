@@ -1,7 +1,7 @@
 import React from "react";
 
-const Button = () => {
-  return <button>Button</button>;
+const Button = ({ children }: { children: React.ReactNode }) => {
+  return <button>{children}</button>;
 };
 
 export default Button;

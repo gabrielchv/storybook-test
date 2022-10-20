@@ -9,9 +9,11 @@ export default {
   args: { disabled: false, onClick: action("clicked") },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = () => {
-  return <Button></Button>;
+const Template: ComponentStory<typeof Button> = ({ children }) => {
+  return <Button>{children}</Button>;
 };
 
 export const MainButton = Template.bind({});
-MainButton.args = {};
+MainButton.args = {
+  children: "Botao",
+};
