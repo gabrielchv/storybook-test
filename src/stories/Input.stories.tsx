@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof Input> = ({ children }) => {
 
 export const MainInput = Template.bind({});
 MainInput.args = {
-  children: "input",
+  children: "inputzinho",
 };
